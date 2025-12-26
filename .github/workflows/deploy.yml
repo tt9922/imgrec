@@ -33,7 +33,7 @@ jobs:
 
       - name: Build Flet App
         run: |
-          flet publish src --distpath dist
+          flet publish src --distpath dist --base-url /imgrec/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
